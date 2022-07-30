@@ -1,0 +1,22 @@
+server:
+  port: 8888 #端口注意不要和vue的8080冲突
+
+
+file-save-path: F:\XDUcat\xducat-client\src\assets\img\catProfile\
+
+spring:
+  #这是给mongoDB使用的，如果你没有mongoDB，把下面的注释掉
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017 #mongodb的url
+      database: XDUcat
+  datasource:
+    url: jdbc:mysql://localhost:3306/xducat?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jba:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

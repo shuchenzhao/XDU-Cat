@@ -1,0 +1,28 @@
+package com.web.xducatserver.controller;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+
+@SpringBootTest
+public class CommentHandlerTest {
+    @Autowired
+    CommentHandler cmd;
+
+    /*@Test
+    void findById(){
+        System.out.println(cmd.findCommentByCatId(1));
+    }*/
+
+    /*@Test
+    void insertComment(){
+
+        System.out.println(cmd.insertComment(1,"测试通道", "小于"));
+    }*/
+
+   @Test
+    void deleteComment(){
+        System.out.println(cmd.deleteComment(1,6));
+    }
+}

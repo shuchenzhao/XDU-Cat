@@ -1,0 +1,28 @@
+package com.web.xducatserver.controller;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class UserHandlerTest {
+    @Autowired
+    UserHandler usd;
+
+    /*@Test
+    void login(){
+        System.out.println(usd.login("super","1234"));
+    }*/
+
+    @Test
+    void addManager(){
+
+        System.out.println(usd.addManager("super3","1234"));
+    }
+
+    /*@Test
+    void modifyPassword(){
+        System.out.println(usd.modifyPassword("super3","123","123"));
+        //System.out.println(usd.userRepository.findUserByUsername("super2"));
+    }*/
+}

@@ -1,0 +1,29 @@
+package com.web.xducatserver.controller;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+
+@SpringBootTest
+public class CatHandlerTest {
+    @Autowired
+    CatHandler cad;
+
+    @Test
+    void findCatById(){
+        System.out.println(cad.findCatById(6));
+    }
+
+    /*@Test
+    void addCat(){
+
+        System.out.println(cad.insertCat("suibianna","黑白", "1.jpg"));
+    }*/
+
+   /*@Test
+    void modifyCat(){
+        System.out.println(cad.modifyCat(6,"图书馆","黑白", "1.jpg"));
+        System.out.println(cad.catRepository.findCatById(6));
+    }*/
+}
